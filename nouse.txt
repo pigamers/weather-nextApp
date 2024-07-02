@@ -1,0 +1,8 @@
+<h1>{weatherData.name}</h1>
+                        <h2>{weatherData.coord.lat}</h2>
+                        <h2>{weatherData.coord.lon}</h2>
+                        <h3>{weatherData.sys.country}</h3>
+                        <h3>Sunrise: {formatTime(weatherData.sys.sunrise)}</h3>
+                        <h3>Sunset: {formatTime(weatherData.sys.sunset)}</h3>
+                        <p>{weatherData.main.temp}*C</p>
+                        <p>{weatherData.weather[0].description}</p>
